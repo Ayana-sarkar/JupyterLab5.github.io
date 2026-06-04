@@ -145,17 +145,18 @@
             font-size: 2.5rem;
             margin-bottom: 3rem;
         }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        .card {
-            background-color:#115e59;
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid #334155;
-            transition: transform 0.3s;
+       .grid,.row, [class*="card-container"], [class*="wrapper"]{
+            display:flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important; 
+         }
+       .card,[class*="box"], [class*="item"]{
+            background-color: var(--card-bg);
+            width: 100% !important;
+            max-width: 800px !important;
+            margin-bottom: 24px !important; 
+            padding: 24px !important;
         }
         .card:hover {
             transform: translateY(-5px);
