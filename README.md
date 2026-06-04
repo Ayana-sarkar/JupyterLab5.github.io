@@ -198,7 +198,7 @@
     <nav>
         <div class="logo">🚀 Learn<span>Jupyter</span></div>
         <div class="nav-links">
-            <a href="#curriculum">Curriculum</a>
+            <a href=" https://ayana-sarkar.github.io/JupyterLab4.github.io/">JupyterLab4</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
