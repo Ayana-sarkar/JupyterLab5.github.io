@@ -230,10 +230,10 @@
     </section>
 
     <section id="curriculum" class="curriculum">
-        <h2>What You'll Learn</h2>
         <div class="grid">
             <div class="card">
-                <h3>1.Least Squares</h3>
+                <h2>1.Least Squares</h2>
+                <img src="Screenshot 2026-02-08 124349.png" alt="Data Visualization" class="box-image">
                 <p>Line1: This imports everything (*) from pylab, a module that combines NumPy (for math/arrays) and Matplotlib (for plotting) into a single namespace.<br> 
                 Line2-3: These lines create two Python lists containing your data points. $X$ holds the independent variables (inputs) and $Y$ holds the dependent variables (outputs). Each pair (e.g., $(0.0, 0.1)$, $(1.0, 0.9)$) represents a coordinate point on a graph.<br>
                 Line4-5: Converts the standard lists into NumPy arrays (vectors). Standard Python lists can't do direct math (e.g., you can't multiply two lists together). Converting them to arrays unlocks "element-wise" math, allowing Python to multiply or add entire arrays at once.<br> 
@@ -248,7 +248,7 @@
                  Line 14: Calculates the slope ($b$) of the best-fit line. This line uses an algebraic variation of the least-squares formula. It looks slightly different than your previous script, but mathematically simplifies to the exact same thing: <br> 
                  $$b = \frac{\sum XY - \frac{\sum X \sum Y}{n}}{\sum X^2 - \frac{(\sum X)^2}{n}}$$          <br> 
                  Line15: Calculates the y-intercept ($a$) using the calculated slope and means: $$a = \bar{y} - b\bar{x}$$<br>
-                 
+                  <img src="Screenshot 2026-02-08 125457.png" alt="Data Visualization" class="box-image">
                  Line1: It takes the linear equation $y = a + bx$ and applies it to the entire Xvec array at once. For example, for $X=0$, it computes $0.029 + (0.989 \times 0)$. <br> 
                  around(..., 2) is a function from pylab/numpy that rounds the resulting numbers to 2 decimal places so they are clean and easy to read.<br>
                  Line2-3: The \t is a special character representing a tab space. It acts like hitting the Tab key on your keyboard, cleanly aligning the printed text output so the lists sit right next to each other.<br> 
@@ -256,15 +256,15 @@
                  Plots the calculated regression line. 'k-' is shorthand for a Black Solid Line (k stands for black in printing/plotting terms, - = solid line). Thus both curves are plotted on the same graph. <br></p>
             </div>
             <div class="card">
-                <h3>2. Cells & Markdown</h3>
+                <h2>2. Cells & Markdown</h2>
                 <p>Learn the difference between Code and Markdown cells. Format notes with headers, lists, and math equations.</p>
             </div>
             <div class="card">
-                <h3>3. Keyboard Shortcuts</h3>
+                <h2>3. Keyboard Shortcuts</h2>
                 <p>Speed up your workflow drastically using Command and Edit modes, cell execution shortcuts, and deletions.</p>
             </div>
             <div class="card">
-                <h3>4. Data & Visuals</h3>
+                <h2>4. Data & Visuals</h2>
                 <p>Import CSVs, run Pandas operations, and render beautiful Matplotlib/Seaborn plots directly inside your notebook.</p>
             </div>
         </div>
