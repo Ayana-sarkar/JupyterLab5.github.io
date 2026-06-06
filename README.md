@@ -267,7 +267,7 @@
             </div>
             <div class="card">
                 <h2>3. Using Arange and Zip</h2>
-                <img src="" alt="Data Visualization" class="box-image">
+                <img src="Screenshot 2026-02-08 225057.png" alt="Data Visualization" class="box-image">
                 <p>Line 2: np.arange stands for "array range". It is NumPy's version of Python's built-in range() function, but instead of returning a basic list of integers, it returns a high-performance NumPy array (a mathematical vector). <br> 
                 The syntax relies on three positional parameters: np.arange(start, stop, step) <br> 
                 start (0): The sequence begins exactly at 0.<br> 
@@ -280,8 +280,8 @@
                 Line 7: plots the graph in window 1. <br>
                 Line 8: plt.figure(2): This tells Matplotlib: "Freeze whatever you are doing with Figure 1. Create a completely separate blank window canvas and call it Figure 2." <br> 
                 Line 8-9: draws the plot in windows 2 .<br> 
-                <img src="" alt="Data Visualization" class="box-image">
-                <img src="" alt="Data Visualization" class="box-image"></p>
+                <img src="Screenshot 2026-02-08 225110.png" alt="Data Visualization" class="box-image">
+                <img src="Screenshot 2026-02-08 225125.png" alt="Data Visualization" class="box-image"></p>
             </div>
             <div class="card">
                 <h2>4. Data & Visuals</h2>
