@@ -256,12 +256,32 @@
                  Plots the calculated regression line. 'k-' is shorthand for a Black Solid Line (k stands for black in printing/plotting terms, - = solid line). Thus both curves are plotted on the same graph. <br></p>
             </div>
             <div class="card">
-                <h2>2. Cells & Markdown</h2>
-                <p>Learn the difference between Code and Markdown cells. Format notes with headers, lists, and math equations.</p>
+                <h2>2. Wave superposition</h2>
+                <img src="Screenshot 2026-02-08 213017.png" alt="Data Visualization" class="box-image">
+                <p>Line3: Creates an array of 100 evenly spaced numbers to serve as the coordinates along the horizontal axis. The sequence starts at 0 and ends exactly at 3*np.pi (which is 3× 3.14159 =9.42). Looking closely at the graph's horizontal axis, you can see the plotted line stops right around 9.4.<br> 
+                Line 4: y the vertical coordinate.<br> 
+                np.sin(x): A fundamental sine wave with a standard frequency and a peak height (amplitude) of 1.<br>.
+                0.5*np.sin(2*x): A secondary wave that is twice as fast (higher frequency due to the 2*x) but only half as tall (lower amplitude due to the 0.5).<br> 
+                By adding them together (+), the two waves constructively and destructively interfere with each other, giving the graph its unique "camel hump" shape instead of a perfect, smooth curve. <br> 
+                Line 5: This single command tells Matplotlib to draw the exact same data ($, y) twice on the graph using two completely different visual styles, layering them on top of each other.  'r.' = Red Dots ;  'b-' = Blue Solid Line.</p>
             </div>
             <div class="card">
-                <h2>3. Keyboard Shortcuts</h2>
-                <p>Speed up your workflow drastically using Command and Edit modes, cell execution shortcuts, and deletions.</p>
+                <h2>3. Using Arange and Zip</h2>
+                <img src="" alt="Data Visualization" class="box-image">
+                <p>Line 2: np.arange stands for "array range". It is NumPy's version of Python's built-in range() function, but instead of returning a basic list of integers, it returns a high-performance NumPy array (a mathematical vector). <br> 
+                The syntax relies on three positional parameters: np.arange(start, stop, step) <br> 
+                start (0): The sequence begins exactly at 0.<br> 
+                stop (100): The sequence stops just before reaching 100 (the upper limit is exclusive).<br> 
+                step (pi/50.0 approx 0.06283): Instead of jumping by whole numbers (1, 2, 3...), this tells the computer to advance by roughly 0.06283 units every time.<br> 
+                So, array t becomes a massive list of numbers: [0.0, 0.06283, 0.12566, 0.18849, ...] all the way up to 99.93716. <br>
+                Line 5: Zip takes multiple lists/sequences and pairs up their elements based on their index position. It unpacks each pair into two temporary variables, xi and yi from x and y Lists, adds them together mathematically (xi + yi), and collects those sums into your final list, xy. <br> 
+                Line 6:   Using plt.plot() multiple times stacks the lines on top of each other in the exact same window. To override this and force things into separate windows at the same time, we use plt.figure( ). <br> 
+                This line tells Matplotlib: "Create a brand new blank window canvas and call it Figure 1." <br> 
+                Line 7: plots the graph in window 1. <br>
+                Line 8: plt.figure(2): This tells Matplotlib: "Freeze whatever you are doing with Figure 1. Create a completely separate blank window canvas and call it Figure 2." <br> 
+                Line 8-9: draws the plot in windows 2 .<br> 
+                <img src="" alt="Data Visualization" class="box-image">
+                <img src="" alt="Data Visualization" class="box-image"></p>
             </div>
             <div class="card">
                 <h2>4. Data & Visuals</h2>
