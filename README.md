@@ -233,8 +233,27 @@
         <h2>What You'll Learn</h2>
         <div class="grid">
             <div class="card">
-                <h3>1. Interface & Setup</h3>
-                <p>Install Anaconda, launch JupyterLab, and master the left sidebar, file browser, and tabbed layouts.</p>
+                <h3>1.Least Squares</h3>
+                <p>Line1: This imports everything (*) from pylab, a module that combines NumPy (for math/arrays) and Matplotlib (for plotting) into a single namespace.<br> 
+                Line2-3: These lines create two Python lists containing your data points. $X$ holds the independent variables (inputs) and $Y$ holds the dependent variables (outputs). Each pair (e.g., $(0.0, 0.1)$, $(1.0, 0.9)$) represents a coordinate point on a graph.<br>
+                Line4-5: Converts the standard lists into NumPy arrays (vectors). Standard Python lists can't do direct math (e.g., you can't multiply two lists together). Converting them to arrays unlocks "element-wise" math, allowing Python to multiply or add entire arrays at once.<br> 
+                Line6-7: Computes the total sum of all elements in $X$ ($\sum X$) and all elements in $Y$ ($\sum Y$). These lines are much cleaner than using zip( ) . <br> 
+                Line8: Computes the sum of squares ($\sum X^2$) . Xvec*Xvec multiplies each element by itself first, creating a new array [0.0, 1.0, 4.0, 9.0, 16.0, 25.0]. Then sum() adds them up to get 55.0.<br>
+                Line 9: Squares the total sum of $X$ ($(\sum X)^2$).<br> 
+                Example: Since sumX is $15.0$, this line calculates $15.0^2 = 225.0$.<br> 
+                Line 10: Computes the sum of the products ($\sum XY$). Because they are vectors, Xvec*Yvec automatically multiplies corresponding elements together (e.g., $0.0 \times 0.1$, $1.0 \times 0.9$). Then sum() totals them up. <br> 
+                 Line 11: n=len( Xvec )<br> 
+                 Calculates the total number of data points by finding the length of the list $X$. Here, $n = 6$.<br> 
+                 Line12-13 : Calculates the mathematical mean (average) of $X$ and $Y$ by dividing their sums by the total number of points ($n$). In statistics, these averages are denoted as $\bar{x}$ and $\bar{y}$.<br>
+                 Line 14: Calculates the slope ($b$) of the best-fit line. This line uses an algebraic variation of the least-squares formula. It looks slightly different than your previous script, but mathematically simplifies to the exact same thing: <br> 
+                 $$b = \frac{\sum XY - \frac{\sum X \sum Y}{n}}{\sum X^2 - \frac{(\sum X)^2}{n}}$$          <br> 
+                 Line15: Calculates the y-intercept ($a$) using the calculated slope and means: $$a = \bar{y} - b\bar{x}$$<br>
+                 
+                 Line1: It takes the linear equation $y = a + bx$ and applies it to the entire Xvec array at once. For example, for $X=0$, it computes $0.029 + (0.989 \times 0)$. <br> 
+                 around(..., 2) is a function from pylab/numpy that rounds the resulting numbers to 2 decimal places so they are clean and easy to read.<br>
+                 Line2-3: The \t is a special character representing a tab space. It acts like hitting the Tab key on your keyboard, cleanly aligning the printed text output so the lists sit right next to each other.<br> 
+                 Line4: Plots your original data points. 'ro' is shorthand for Red Circles (r = red, o = circle markers). This creates the red dots on the graph.<br>
+                 Plots the calculated regression line. 'k-' is shorthand for a Black Solid Line (k stands for black in printing/plotting terms, - = solid line). Thus both curves are plotted on the same graph. <br></p>
             </div>
             <div class="card">
                 <h3>2. Cells & Markdown</h3>
