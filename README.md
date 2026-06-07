@@ -65,13 +65,17 @@
             padding: 5rem 10%;
             min-height: 80vh;
         }
-        .hero-content {
-            max-width: 50%;
+       .hero-content, [class*="hero"] {
+            width: 100% !important;
+            max-width: 950px !important; 
+            margin: 0 auto !important;  
+            padding: 40px 20px !important;
+            text-align: left !important;  
         }
         .hero-content h1 {
             font-size: 3.5rem;
             line-height: 1.2;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.5rem;    
         }
         .hero-content h1 span {
             color: var(--accent-orange);
@@ -80,6 +84,7 @@
             font-size: 1.2rem;
             color: var(--text-muted);
             margin-bottom: 2rem;
+            max-width: 800px;
         }
         .btn {
             display: inline-block;
@@ -210,13 +215,12 @@
             <h1>Plotting with<span> Arrays</span></h1>
             <p>Go from absolute beginner to writing interactive Python code, building data visualizations, and managing notebooks like a pro.</p>
         </div>
-        <div>
+        <div class="button-group">
             <a href="https://ayana-sarkar.github.io/Home2.github.io/" class="btn">Basic</a>
             <a href="https://ayana-sarkar.github.io/JupyterLab4.github.io/" class="btn">Plotting with List</a>
             <a href="https://ayana-sarkar.github.io/JupyterLab5.github.io/" class="btn">Plotting with Arrays</a>
             <a href="https://ayana-sarkar.github.io/JupyterLab2.github.io/" class="btn">Interpolation</a>
         </div>
-        
     </section>
 
     <section id="curriculum" class="curriculum">
