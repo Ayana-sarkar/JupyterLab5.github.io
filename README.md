@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -203,23 +202,19 @@
 
     <nav>
         <div class="logo">🚀 Learn<span>Jupyter</span></div>
-        <div class="nav-links">
-            <a href=" https://ayana-sarkar.github.io/JupyterLab4.github.io/">JupyterLab4</a>
-             <a href="https://ayana-sarkar.github.io/JupyterLab4.github.io/">JupyterLab4</a>
-            <a href="https://ayana-sarkar.github.io/JupyterLab5.github.io/">JupiterLab5</a>
-        </div>
     </nav>
 
     <section class="hero">
-       
         <div class="button-group">
             <a href="https://ayana-sarkar.github.io/Home2.github.io/" class="btn">Basic</a>
             <a href="https://ayana-sarkar.github.io/JupyterLab4.github.io/" class="btn">Plotting with List</a>
             <a href="https://ayana-sarkar.github.io/JupyterLab5.github.io/" class="btn">Plotting with Arrays</a>
             <a href="https://ayana-sarkar.github.io/JupyterLab2.github.io/" class="btn">Interpolation</a>
             <a href="https://ayana-sarkar.github.io/JupyterLab1.github.io/" class="btn">Special func</a>
+            <a href=" https://ayana-sarkar.github.io/JupyterLab3.github.io/" class="btn">Let's Practice more!</a>
             <div class="hero-content">
             <h1>Plotting with<span> Arrays</span></h1>
+            <p>Unlike a standard Python list that can hold a mix of text, numbers, and booleans, an array is homogeneous. Every single element in it must be exactly the same type (like all integers or all floats).Because arrays handle instant math, they are used to generate thousands of closely spaced data points.</p>
             </div>
         </div>
     </section>
@@ -278,16 +273,9 @@
                 <img src="Screenshot 2026-02-08 225110.png" alt="Data Visualization" class="box-image">
                 <img src="Screenshot 2026-02-08 225125.png" alt="Data Visualization" class="box-image"></p>
             </div>
-            <div class="card">
-                <h2>4. Data & Visuals</h2>
-                <p>Import CSVs, run Pandas operations, and render beautiful Matplotlib/Seaborn plots directly inside your notebook.</p>
-            </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 LearnJupyter Course. Built for future Data Scientists.</p>
-    </footer>
 
 </body>
 </html>
